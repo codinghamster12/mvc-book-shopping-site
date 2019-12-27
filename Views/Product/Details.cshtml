@@ -1,0 +1,35 @@
+﻿@model bookstore1.Models.Book
+  
+
+<div class="container">
+    <div class="row">
+       
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <img class="img-responsive"
+                 style="cursor:pointer;height:500px;width:410px"
+                 src="@Url.Content(Model.Cover)" />
+
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <h2>@Html.DisplayFor(item => item.Title)</h2>
+            <ul>
+                <li>Author: @Html.DisplayFor(item => item.Author)</li>
+                <li>Category: @Html.DisplayFor(item => item.Category)</li>
+            </ul>
+            <p>@Html.DisplayFor(item => item.Description)</p>
+            
+            <p>
+            <button class="btn btn-primary">
+                @Html.DisplayFor(item => item.formatPrice)</button>
+                </p>
+                        <button class="btn btn-success" onclick="location.href='@Url.Action("Details", "Cart", new { id= Model.Id })'">
+                            Add to Cart
+                        </button>
+
+</div>
+                </div>
+            </div>
+     
+            
+                               

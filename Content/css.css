@@ -1,0 +1,28 @@
+﻿
+.left{
+    margin-left: 10px;
+}
+.copyright{
+    background-color:black;
+    color:white
+}
+.sm-icon{
+    color:white;
+    background-color:black;
+    font-size: 18px;
+  
+}
+
+.copyright-middle{
+    text-align:center;
+}
+.heading{
+    margin-bottom:30px;
+    margin-top:10px;
+}
+footer{
+    margin-top: 500px;
+}
+.cart{
+    margin-bottom:500px;
+}

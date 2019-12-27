@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+}
+<style>
+    *{
+        
+    }
+    .contact h1
+{
+  font-family: 'Lato' sans-serif;
+  font-size: 2rem;
+
+}
+.contact p
+{
+  text-align: left;
+  position: relative;
+  left: 400px;
+  font-size: 1rem;
+}
+form
+{
+ margin: 0 auto;
+  width:730px;
+  height: 500px;
+  
+}
+input, textarea
+{
+  display: block;
+  width: 720px;
+  height: 50px;
+  margin: 25px 0;
+
+  border: none;
+  font-family: "Lato" sans-serif;
+  font-size: 24px;
+  outline: 0;
+
+}
+textarea
+{
+  height: 100px;
+}
+.line
+{
+  width: inherit;
+  height: 1px;
+  background-color: #eeeeee;
+}
+button
+{
+  width: 70px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  display: block;
+  margin: 25px 0 ;
+  height: 35px;
+  background-color: #18bc9c;
+  color: white;
+  border: 1px solid white;
+
+
+}
+</style>
+<h2>@ViewBag.Title.</h2>
+
+
+<section class="contact">
+    
+    <form>
+        <input type="text" placeholder="Name">
+        <div class="line"></div>
+        <input type="text" placeholder="Email Address">
+        <div class="line"></div>
+        <input type="text" placeholder="Contact number">
+        <div class="line"></div>
+        <textarea placeholder="Message" rows="8" cols="80" name="name"></textarea>
+        <div class="line"></div>
+        <button type="button">Send</button>
+    </form>
+</section>
+
+
